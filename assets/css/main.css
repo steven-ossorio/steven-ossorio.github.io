@@ -1719,6 +1719,15 @@
 			margin-left: 15px;
 		}
 
+		.saviors-container {
+			padding-left: 150px;
+			display: flex;
+		}
+
+		.saviors-container > a > img {
+			height: 300px;
+		}
+
 		.links {
 			margin-top: 15px;
 			font-size: 30px;
