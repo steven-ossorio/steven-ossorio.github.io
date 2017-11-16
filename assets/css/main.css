@@ -1710,18 +1710,13 @@
 		.item {
 			display: flex;
 			float: left;
-			padding: 15px;
+			padding: 50px;
 		}
 
 		.description {
 			width: 200px;
-			margin-top: 55px;
+			margin-top: 20px;
 			margin-left: 15px;
-		}
-
-		.saviors-container {
-			padding-left: 150px;
-			display: flex;
 		}
 
 		.saviors-container > a > img {
@@ -1738,6 +1733,10 @@
 		}
 
 /* Image */
+	.project-description {
+		font-size: 12px;
+		line-height: 1.5;
+	}
 
 	.image {
 		display: inline-block;
@@ -1747,7 +1746,7 @@
 		.image img {
 			/*display: block;*/
 			max-width: 500px;
-			height: auto;
+			height: 300px;;
 		}
 
 		.image.avatar48 {
@@ -1757,10 +1756,10 @@
 		}
 
 			.image.avatar48 img {
-				width: 110px;
-				height: 110px;
-				top: -25px;
-				right: 0;
+				width: 125px;
+				height: 125px;
+				top: -35px;
+				right: -5px;
 				position: absolute;
 			}
 
