@@ -1713,6 +1713,11 @@
 			padding: 50px;
 		}
 
+		.project-description {
+			font-size: 12px;
+			line-height: 1.5;
+		}
+
 		.description {
 			width: 200px;
 			margin-top: 20px;
@@ -1733,11 +1738,6 @@
 		}
 
 /* Image */
-	.project-description {
-		font-size: 12px;
-		line-height: 1.5;
-	}
-
 	.image {
 		display: inline-block;
 		border: 0;
