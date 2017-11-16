@@ -1713,16 +1713,18 @@
 			padding: 50px;
 		}
 
-		.project-description {
+		/*.project-description {
 			font-size: 12px;
 			line-height: 1.5;
-		}
+		}*/
 
 		.description {
 			width: 200px;
-			margin-top: 20px;
+			/*margin-top: 20px;*/
 			margin-left: 15px;
 		}
+
+		.
 
 		.saviors-container > a > img {
 			height: 300px;
@@ -1730,10 +1732,13 @@
 
 		.links {
 			margin-top: 15px;
-			font-size: 30px;
+			/*font-size: 30px;*/
+			font-size: 15px;
+			line-height: 1.5;
 		}
 
 		.links > a {
+			font-size: 30px;
 			margin: 10px;
 		}
 
