@@ -1,0 +1,31 @@
+.u-center-text {
+  text-align: center;
+}
+
+.u-margin-bottom-big {
+  margin-bottom: 8rem;
+
+  @include respond(small-phone) {
+    margin-bottom: 4rem;
+  }
+}
+
+.u-padding-bottom-15 {
+  padding-bottom: 15rem;
+}
+
+.u-padding-top-big {
+  padding-top: 15rem;
+}
+
+.u-padding-top-small {
+  padding-top: 8rem;
+
+  @include respond(lg-laptop) {
+    padding-top: 13rem;
+  }
+
+  @include respond(tab-port) {
+    padding-top: 18rem;
+  }
+}

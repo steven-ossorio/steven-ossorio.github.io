@@ -1,0 +1,216 @@
+.card {
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  height: 52rem;
+
+  &-side {
+    height: 52rem;
+    transition: all 0.8s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden;
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 1.5rem 4rem rgba(black, 0.1);
+
+    &-front {
+      background-color: white;
+      z-index: 2;
+      &:hover {
+        z-index: 1;
+      }
+    }
+
+    &-back {
+      transform: rotateY(180deg);
+      z-index: 1;
+
+      &:hover {
+        z-index: 2;
+      }
+
+      &-1 {
+        background-image: linear-gradient(to right bottom, white, blue);
+      }
+
+      &-2 {
+        background-image: linear-gradient(to right bottom, orange, red);
+      }
+
+      &-3 {
+        background-image: linear-gradient(to right bottom, red, blue);
+      }
+    }
+  }
+
+  &:hover &-side-front {
+    transform: rotateY(-180deg);
+  }
+
+  &:hover &-side-back {
+    transform: rotateY(0);
+  }
+
+  &-picture {
+    background-size: cover;
+    height: 23rem;
+    background-blend-mode: soft-light;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    img {
+      width: 100%;
+    }
+
+    &-1 {
+      background-image: linear-gradient(to right bottom, white, blue);
+    }
+
+    &-2 {
+      background-image: linear-gradient(to right bottom, orange, red);
+    }
+
+    &-3 {
+      background-image: linear-gradient(to right bottom, red, purple);
+    }
+  }
+
+  &-heading {
+    font-size: 2.8rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: white;
+    position: absolute;
+    top: 14rem;
+    width: 60%;
+  }
+
+  &-heading-span {
+    padding: 1rem 1.5rem;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+
+    &-1 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba(green, 0.85),
+        rgba(yellow, 0.85)
+      );
+    }
+
+    &-2 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba(orange, 0.85),
+        rgba(brown, 0.85)
+      );
+    }
+
+    &-3 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba(red, 0.85),
+        rgba(blue, 0.85)
+      );
+    }
+  }
+
+  &-details {
+    padding: 3rem;
+
+    ul {
+      list-style: none;
+      width: 80%;
+      margin: 0 auto;
+
+      li {
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 1rem;
+
+        &:not(:last-child) {
+          border-bottom: 1px solid grey;
+        }
+      }
+    }
+  }
+
+  &-cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center;
+
+    a {
+      color: black;
+      text-decoration: none;
+      font-size: 4.5rem;
+      padding-bottom: 5px;
+
+      &:hover {
+        cursor: pointer;
+        border-bottom: 3px solid black;
+      }
+    }
+  }
+
+  &-info-box {
+    color: white;
+    margin-bottom: 8rem;
+  }
+
+  @include respond(tab-port) {
+    height: auto;
+    border-radius: 3px;
+    background-color: white;
+    box-shadow: 0 1.5rem 4rem rgba(black, 0.1);
+
+    &-side {
+      height: auto;
+      position: relative;
+      box-shadow: none;
+
+      &-back {
+        transform: rotateY(0);
+        -webkit-clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+        clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+      }
+    }
+
+    &:hover &-side-front {
+      transform: rotateY(0);
+    }
+
+    &-cta {
+      position: relative;
+      top: 0%;
+      left: 0%;
+      transform: translate(0);
+      width: 100%;
+      padding: 7rem 4rem 4rem 4rem;
+
+      a {
+        color: black;
+        text-decoration: none;
+        font-size: 4.5rem;
+        padding-bottom: 5px;
+
+        &:hover {
+          cursor: pointer;
+          border-bottom: 3px solid black;
+        }
+      }
+    }
+
+    &-info-box {
+      color: white;
+      margin-bottom: 3rem;
+    }
+  }
+}
