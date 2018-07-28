@@ -19,7 +19,7 @@
     }
   }
 
-  @if $breakpoint == tab-port {
+  @if $breakpoint == tablet {
     @media (max-width: 48em) {
       @content;
     }

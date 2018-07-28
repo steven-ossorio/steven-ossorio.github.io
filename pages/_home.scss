@@ -20,6 +20,42 @@
   }
 }
 
+.section-resume {
+  margin-top: 250px;
+
+  .envelope {
+    position: relative;
+    margin: 50px auto 0;
+    width: 250px;
+    height: 225px;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 0 15px #c94548 inset;
+  }
+  .envelope:before,
+  .envelope:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 0 solid transparent;
+    border-width: 112px 125px;
+  }
+
+  .envelope:before {
+    top: -100%;
+    left: 0px;
+  }
+  .envelope:after {
+    border-right-color: #ed4c50;
+    border-left-color: #fa565a;
+    border-bottom-color: #fa565a;
+    top: 0;
+    border-radius: 0 0 5px 5px;
+    transform: rotate(360deg);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+  }
+}
+
 .section-projects {
   background-color: #f7f7f7;
   padding: 58rem 0;
