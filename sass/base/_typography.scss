@@ -15,22 +15,20 @@ body {
     display: block;
     font-size: 5rem;
     font-weight: 400;
-    letter-spacing: 3.5rem;
+    letter-spacing: 1rem;
 
     animation-name: moveInTop;
     animation-duration: 3s;
 
-    @include respond(tab-port) {
-      font-size: 8rem;
+    @include respond(tabletOne) {
+      font-size: 6rem;
     }
 
     @include respond(phone) {
-      letter-spacing: 1rem;
       font-size: 5rem;
     }
 
     @include respond(small-phone) {
-      letter-spacing: 0.5rem;
       font-size: 6rem;
     }
   }
@@ -41,26 +39,27 @@ body {
     display: block;
     font-size: 2.5rem;
     font-weight: 700;
-    letter-spacing: 1.75rem;
+    letter-spacing: 0.5rem;
 
     @include respond(lg-laptop) {
       font-size: 2rem;
     }
 
     @include respond(laptop) {
-      font-size: 1.5rem;
+      font-size: 2.5rem;
     }
 
-    @include respond(tab-port) {
-      font-size: 2.7rem;
+    @include respond(tabletTwo) {
+      font-size: 2.3rem;
+      letter-spacing: 0.2rem;
     }
 
-    @include respond(phone) {
-      font-size: 1.8rem;
+    @include respond(tabletOne) {
+      font-size: 2.3rem;
       letter-spacing: 0.5rem;
     }
 
-    @include respond(small-phone) {
+    @include respond(phone) {
       font-size: 1.8rem;
       letter-spacing: 0.5rem;
     }

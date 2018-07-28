@@ -19,7 +19,13 @@
     }
   }
 
-  @if $breakpoint == tablet {
+  @if $breakpoint == tabletOne {
+    @media (max-width: 34.375em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == tabletTwo {
     @media (max-width: 48em) {
       @content;
     }

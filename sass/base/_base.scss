@@ -15,7 +15,7 @@ html {
     font-size: 56.25%;
   }
 
-  @include respond(tab-port) {
+  @include respond(tabletOne) {
     font-size: 50%;
   }
 
@@ -30,7 +30,7 @@ html {
 
 body {
   box-sizing: border-box;
-  padding: 3rem;
+  // padding: 3rem;
 
   @include respond(tab-port) {
     padding: 0px;

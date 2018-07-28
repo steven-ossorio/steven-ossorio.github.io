@@ -11,12 +11,7 @@
   position: relative;
 
   -webkit-clip-path: polygon(0 0, 100% 22%, 100% 75vh, 0 100%);
-  clip-path: polygon(0 0, 100% 22%, 100% 75vh, 0 100%);
-
-  @include respond(phone) {
-    clip-path: polygon(0 0, 100% 15%, 100% 85vh, 0 100%);
-    -webkit-clip-path: polygon(0 0, 100% 15%, 100% 85vh, 0 100%);
-  }
+  clip-path: polygon(0 0, 100% 15%, 100% 85vh, 0 100%);
 
   .text-box {
     position: absolute;

@@ -109,6 +109,9 @@
 html {
   background-color: #f7f7f7;
   font-size: 62.5%; }
+  @media (max-width: 34.375em) {
+    html {
+      font-size: 50%; } }
   @media (max-width: 20em) {
     html {
       font-size: 40%; } }
@@ -117,8 +120,7 @@ html {
       font-size: 75%; } }
 
 body {
-  box-sizing: border-box;
-  padding: 3rem; }
+  box-sizing: border-box; }
 
 @keyframes moveInLeft {
   0% {
@@ -165,16 +167,17 @@ body {
     display: block;
     font-size: 5rem;
     font-weight: 400;
-    letter-spacing: 3.5rem;
+    letter-spacing: 1rem;
     animation-name: moveInTop;
     animation-duration: 3s; }
+    @media (max-width: 34.375em) {
+      .heading-primary-main {
+        font-size: 6rem; } }
     @media (max-width: 26.5625em) {
       .heading-primary-main {
-        letter-spacing: 1rem;
         font-size: 5rem; } }
     @media (max-width: 20em) {
       .heading-primary-main {
-        letter-spacing: 0.5rem;
         font-size: 6rem; } }
   .heading-primary-sub {
     margin-top: 15px;
@@ -182,18 +185,22 @@ body {
     display: block;
     font-size: 2.5rem;
     font-weight: 700;
-    letter-spacing: 1.75rem; }
+    letter-spacing: 0.5rem; }
     @media (max-width: 90em) {
       .heading-primary-sub {
         font-size: 2rem; } }
     @media (max-width: 64em) {
       .heading-primary-sub {
-        font-size: 1.5rem; } }
-    @media (max-width: 26.5625em) {
+        font-size: 2.5rem; } }
+    @media (max-width: 48em) {
       .heading-primary-sub {
-        font-size: 1.8rem;
+        font-size: 2.3rem;
+        letter-spacing: 0.2rem; } }
+    @media (max-width: 34.375em) {
+      .heading-primary-sub {
+        font-size: 2.3rem;
         letter-spacing: 0.5rem; } }
-    @media (max-width: 20em) {
+    @media (max-width: 26.5625em) {
       .heading-primary-sub {
         font-size: 1.8rem;
         letter-spacing: 0.5rem; } }
@@ -259,11 +266,7 @@ body {
   background-position: top;
   position: relative;
   -webkit-clip-path: polygon(0 0, 100% 22%, 100% 75vh, 0 100%);
-  clip-path: polygon(0 0, 100% 22%, 100% 75vh, 0 100%); }
-  @media (max-width: 26.5625em) {
-    .header {
-      clip-path: polygon(0 0, 100% 15%, 100% 85vh, 0 100%);
-      -webkit-clip-path: polygon(0 0, 100% 15%, 100% 85vh, 0 100%); } }
+  clip-path: polygon(0 0, 100% 15%, 100% 85vh, 0 100%); }
   .header .text-box {
     position: absolute;
     top: 50%;
