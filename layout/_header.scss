@@ -31,6 +31,6 @@
   );
   position: relative;
 
-  -webkit-clip-path: polygon(100% 100%, 0% 80%, 0% 20%, 100% 0%);
-  clip-path: polygon(100% 100%, 0% 80%, 0% 20%, 100% 0%);
+  -webkit-clip-path: polygon(0 0, 100% 15%, 100% 85vh, 0 100%);
+  clip-path: polygon(0 0, 100% 15%, 100% 85vh, 0 100%);
 }

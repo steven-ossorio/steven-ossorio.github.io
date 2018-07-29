@@ -206,7 +206,7 @@ body {
         letter-spacing: 0.8rem; } }
 
 .heading-secondary {
-  font-size: 4.5rem;
+  font-size: 3.5rem;
   text-transform: uppercase;
   font-weight: 700;
   display: inline-block;
@@ -215,12 +215,6 @@ body {
   color: transparent;
   letter-spacing: 0.2rem;
   text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
-  @media (max-width: 90em) {
-    .heading-secondary {
-      padding-top: 2rem; } }
-  @media (max-width: 64em) {
-    .heading-secondary {
-      font-size: 4rem; } }
   @media (max-width: 34.375em) {
     .heading-secondary {
       padding-top: 4rem;
@@ -280,8 +274,8 @@ body {
   height: 105vh;
   background-image: linear-gradient(to right, rgba(137, 247, 254, 0.7), rgba(102, 166, 255, 0.7));
   position: relative;
-  -webkit-clip-path: polygon(100% 100%, 0% 80%, 0% 20%, 100% 0%);
-  clip-path: polygon(100% 100%, 0% 80%, 0% 20%, 100% 0%); }
+  -webkit-clip-path: polygon(0 0, 100% 15%, 100% 85vh, 0 100%);
+  clip-path: polygon(0 0, 100% 15%, 100% 85vh, 0 100%); }
 
 .row {
   max-width: 114rem;
@@ -496,16 +490,16 @@ body {
     flex-wrap: wrap;
     text-decoration: none; }
     .skill-container .skill-list .icon-container {
-      margin: 2.5rem; }
+      margin: 1.5rem; }
       .skill-container .skill-list .icon-container li {
         list-style: none; }
         .skill-container .skill-list .icon-container li img {
           height: 5.5rem; }
         .skill-container .skill-list .icon-container li i {
-          font-size: 6rem; }
-          @media (max-width: 64em) {
+          font-size: 6.5rem; }
+          @media (max-width: 90em) {
             .skill-container .skill-list .icon-container li i {
-              font-size: 5.5rem; } }
+              font-size: 6.5rem; } }
           @media (max-width: 26.5625em) {
             .skill-container .skill-list .icon-container li i {
               font-size: 4.75rem; } }
