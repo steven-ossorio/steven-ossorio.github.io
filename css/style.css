@@ -440,12 +440,8 @@ body {
   .composition:hover .composition-photo:not(:hover) {
     transform: scale(0.95); }
 
-@media (max-width: 26.5625em) {
-  .link-list-container {
-    width: inherit; } }
-
 .link-list-container ul {
-  justify-content: space-around;
+  justify-content: space-evenly;
   display: flex; }
   .link-list-container ul li {
     padding: 1rem;
@@ -453,10 +449,7 @@ body {
     list-style: none; }
     @media (max-width: 26.5625em) {
       .link-list-container ul li {
-        font-size: 4rem; } }
-    @media (max-width: 20em) {
-      .link-list-container ul li {
-        font-size: 5rem; } }
+        font-size: 6rem; } }
     .link-list-container ul li .linkedin-text-animation {
       animation-name: moveInLeft;
       animation-duration: 3s; }
@@ -474,8 +467,10 @@ body {
         margin-top: -2rem; }
         @media (max-width: 26.5625em) {
           .link-list-container ul li a p {
-            font-size: 1.8rem;
-            margin-top: -1rem; } }
+            font-size: 1.8rem; } }
+        @media (max-width: 20em) {
+          .link-list-container ul li a p {
+            margin-top: -1.1em; } }
 
 .skill-container {
   margin: 0 auto;
