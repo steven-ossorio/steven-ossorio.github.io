@@ -275,8 +275,12 @@ body {
   background-size: cover;
   background-position: top;
   position: relative;
-  -webkit-clip-path: polygon(0 0, 100% 22%, 100% 75vh, 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 15%, 100% 85vh, 0 100%);
   clip-path: polygon(0 0, 100% 15%, 100% 85vh, 0 100%); }
+  @media (max-width: 26.5625em) {
+    .header {
+      -webkit-clip-path: polygon(0 0, 100% 15%, 100% 85vh, 0 100%);
+      clip-path: polygon(0 0, 100% 15%, 100% 85vh, 0 100%); } }
   .header .text-box {
     position: absolute;
     top: 50%;
