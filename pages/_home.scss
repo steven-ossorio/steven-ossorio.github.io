@@ -1,12 +1,8 @@
 .section-about {
-  height: 90vh;
+  height: 100vh;
   background-color: #f7f7f7;
   padding: 25rem 0;
   margin-top: -20vh;
-
-  @include respond(phone) {
-    height: 80vh;
-  }
 }
 
 .section-skills {
@@ -14,18 +10,6 @@
   background-color: #f7f7f7;
   padding: 70rem 0;
   margin-top: -10vh;
-
-  @include respond(tabletTwo) {
-    padding: 70rem 0;
-  }
-
-  @include respond(tabletOne) {
-    padding: 70rem 0;
-  }
-
-  @include respond(phone) {
-    margin-top: 30vh;
-  }
 }
 
 .section-resume {
@@ -104,67 +88,26 @@
   position: relative;
 
   &-photo {
-    width: 70%;
+    width: 55%;
     box-shadow: 0 1.5rem 4rem rgba(black, 0.8);
     border-radius: 2px;
     position: absolute;
     outline-offset: 2rem;
 
     &--p1 {
+      width: 45%;
       left: 0;
-      top: 4rem;
-
-      @include respond(tabletOne) {
-        left: 12rem;
-        top: 10rem;
-      }
-
-      @include respond(phone) {
-        width: 50%;
-        left: 2rem;
-      }
-
-      @include respond(small-phone) {
-        width: 50%;
-        left: 2rem;
-      }
+      top: -2rem;
     }
 
     &--p2 {
-      left: 12rem;
-      top: 10rem;
-
-      @include respond(tabletOne) {
-        left: 12rem;
-        top: 10rem;
-      }
-
-      @include respond(phone) {
-        left: 12rem;
-        top: 15rem;
-      }
-
-      @include respond(small-phone) {
-        left: 10rem;
-        top: 10rem;
-      }
+      right: 5rem;
+      top: 2rem;
     }
 
     &--p3 {
-      @include respond(tabletOne) {
-        left: 12rem;
-        top: 10rem;
-      }
-
-      @include respond(phone) {
-        left: 11rem;
-        top: 26rem;
-      }
-
-      @include respond(small-phone) {
-        left: 8rem;
-        top: 20rem;
-      }
+      left: 20%;
+      top: 10rem;
     }
 
     &:hover {
@@ -189,10 +132,6 @@
       font-size: 6rem;
       list-style: none;
 
-      @include respond(phone) {
-        font-size: 6rem;
-      }
-
       .linkedin-text-animation {
         animation-name: moveInLeft;
         animation-duration: 3s;
@@ -215,14 +154,6 @@
         p {
           font-size: 2.5rem;
           margin-top: -2rem;
-
-          @include respond(phone) {
-            font-size: 1.8rem;
-          }
-
-          @include respond(small-phone) {
-            margin-top: -1.1em;
-          }
         }
       }
     }
@@ -241,31 +172,11 @@
     .icon-container {
       margin: 2.5rem;
 
-      @include respond(phone) {
-        margin: 0.8rem;
-      }
-
       li {
         list-style: none;
 
         img {
           height: 5.5rem;
-
-          @include respond(laptop) {
-            height: 4.7rem;
-          }
-
-          @include respond(tab-port) {
-            height: 4.2rem;
-          }
-
-          @include respond(phone) {
-            height: 4rem;
-          }
-
-          @include respond(small-phone) {
-            height: 1rem;
-          }
         }
 
         i {
