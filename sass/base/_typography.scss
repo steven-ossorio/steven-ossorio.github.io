@@ -77,14 +77,6 @@ body {
   letter-spacing: 0.2rem;
   text-shadow: 0.5rem 1rem 2rem rgba(black, 0.2);
 
-  // @include respond(lg-laptop) {
-  //   padding-top: 2rem;
-  // }
-
-  // @include respond(laptop) {
-  //   font-size: 4rem;
-  // }
-
   @include respond(tabletOne) {
     padding-top: 4rem;
     font-size: 3.5rem;
