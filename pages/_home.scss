@@ -3,6 +3,10 @@
   background-color: #f7f7f7;
   padding: 25rem 0;
   margin-top: -20vh;
+
+  @include respond(phone) {
+    height: 60vh;
+  }
 }
 
 .section-skills {
@@ -87,6 +91,11 @@
 }
 
 .section-about-description-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+
   @include respond(phone) {
     display: flex;
     justify-content: space-between;
@@ -125,9 +134,14 @@
         width: 60%;
       }
 
+      @include respond(phone) {
+        top: 5rem;
+        left: 4rem;
+      }
+
       @include respond(small-phone) {
-        top: 0rem;
-        left: 0rem;
+        top: 5rem;
+        left: 4rem;
       }
     }
 
@@ -145,14 +159,18 @@
         top: 10rem;
       }
 
+      @include respond(phone) {
+        top: 15rem;
+        left: 13rem;
+      }
+
       @include respond(small-phone) {
-        top: 4rem;
-        left: 9rem;
+        top: 12rem;
+        left: 12rem;
       }
     }
 
     &--p3 {
-      left: 20%;
       top: 25rem;
 
       @include respond(laptop) {
@@ -165,12 +183,13 @@
       }
 
       @include respond(phone) {
-        top: 18rem;
+        top: 24rem;
+        left: 10rem;
       }
 
       @include respond(small-phone) {
-        top: 12rem;
-        left: 8rem;
+        top: 20rem;
+        left: 10rem;
       }
     }
 

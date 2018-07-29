@@ -231,6 +231,10 @@ body {
   @media (max-width: 64em) {
     .heading-secondary {
       font-size: 4rem; } }
+  @media (max-width: 34.375em) {
+    .heading-secondary {
+      padding-top: 4rem;
+      font-size: 3.5rem; } }
   @media (max-width: 26.5625em) {
     .heading-secondary {
       font-size: 2.5rem; } }
@@ -326,6 +330,9 @@ body {
   background-color: #f7f7f7;
   padding: 25rem 0;
   margin-top: -20vh; }
+  @media (max-width: 26.5625em) {
+    .section-about {
+      height: 60vh; } }
 
 .section-skills {
   height: 90vh;
@@ -389,11 +396,16 @@ body {
       .section-footer li {
         margin-top: 0; } }
 
-@media (max-width: 26.5625em) {
-  .section-about-description-container {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column; } }
+.section-about-description-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row; }
+  @media (max-width: 26.5625em) {
+    .section-about-description-container {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column; } }
 
 .composition {
   position: relative; }
@@ -413,10 +425,14 @@ body {
       @media (max-width: 64em) {
         .composition-photo--p1 {
           width: 50%; } }
+      @media (max-width: 26.5625em) {
+        .composition-photo--p1 {
+          top: 5rem;
+          left: 4rem; } }
       @media (max-width: 20em) {
         .composition-photo--p1 {
-          top: 0rem;
-          left: 0rem; } }
+          top: 5rem;
+          left: 4rem; } }
     .composition-photo--p2 {
       left: 12rem;
       top: 10rem; }
@@ -424,23 +440,27 @@ body {
         .composition-photo--p2 {
           left: 10rem;
           top: 8rem; } }
+      @media (max-width: 26.5625em) {
+        .composition-photo--p2 {
+          top: 15rem;
+          left: 13rem; } }
       @media (max-width: 20em) {
         .composition-photo--p2 {
-          top: 4rem;
-          left: 9rem; } }
+          top: 12rem;
+          left: 12rem; } }
     .composition-photo--p3 {
-      left: 20%;
       top: 25rem; }
       @media (max-width: 64em) {
         .composition-photo--p3 {
           top: 18rem; } }
       @media (max-width: 26.5625em) {
         .composition-photo--p3 {
-          top: 18rem; } }
+          top: 24rem;
+          left: 10rem; } }
       @media (max-width: 20em) {
         .composition-photo--p3 {
-          top: 12rem;
-          left: 8rem; } }
+          top: 20rem;
+          left: 10rem; } }
     .composition-photo:hover {
       transform: scale(1.05) translateY(6px);
       box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
