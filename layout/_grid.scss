@@ -3,7 +3,7 @@
   margin: 0 auto;
   margin-bottom: $gutter-vertical;
 
-  @include respond(tab-port) {
+  @include respond(tabletTwo) {
     margin-bottom: $gutter-vertical-small;
     max-width: 50rem;
     padding: 0 3rem;
@@ -16,7 +16,7 @@
     float: left;
     margin-right: $gutter-horizontal;
 
-    @include respond(tab-port) {
+    @include respond(tabletTwo) {
       margin-right: 0;
       margin-bottom: $gutter-vertical-small;
     }
@@ -25,7 +25,7 @@
       margin-right: 0px;
     }
 
-    @include respond(tab-port) {
+    @include respond(tabletTwo) {
       width: 100% !important;
     }
   }
