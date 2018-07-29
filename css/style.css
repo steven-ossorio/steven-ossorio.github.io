@@ -241,14 +241,8 @@ body {
 
 .paragraph {
   padding-top: 10rem;
-  font-size: 2rem; }
-  @media (max-width: 64em) {
-    .paragraph {
-      padding-top: 2rem; } }
-  @media (max-width: 26.5625em) {
-    .paragraph {
-      font-size: 2rem;
-      padding: 0px 10px; } }
+  font-size: 2rem;
+  padding: 0px 15px; }
 
 .u-center-text {
   text-align: center; }
@@ -395,15 +389,9 @@ body {
         margin-top: 0; } }
 
 .section-about-description-container {
-  width: 100%;
   display: flex;
   justify-content: space-between;
-  flex-direction: row; }
-  @media (max-width: 26.5625em) {
-    .section-about-description-container {
-      display: flex;
-      justify-content: space-between;
-      flex-direction: column; } }
+  flex-direction: column; }
 
 .composition {
   position: relative; }

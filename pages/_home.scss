@@ -91,16 +91,9 @@
 }
 
 .section-about-description-container {
-  width: 100%;
   display: flex;
   justify-content: space-between;
-  flex-direction: row;
-
-  @include respond(phone) {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-  }
+  flex-direction: column;
 }
 
 .composition {
