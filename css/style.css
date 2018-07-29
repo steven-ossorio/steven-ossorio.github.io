@@ -312,8 +312,6 @@ body {
     margin-right: 6rem; }
     .row [class^="col-"]:last-child {
       margin-right: 0px; }
-  .row .col-1-of-2 {
-    width: calc((100% - 6rem) / 2); }
   .row .col-1-of-3 {
     width: calc((100% - 2 * 6rem) / 3); }
   .row .col-2-of-3 {
@@ -332,7 +330,7 @@ body {
   margin-top: -20vh; }
   @media (max-width: 26.5625em) {
     .section-about {
-      height: 60vh; } }
+      height: 80vh; } }
 
 .section-skills {
   height: 90vh;
