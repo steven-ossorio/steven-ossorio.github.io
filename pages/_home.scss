@@ -86,6 +86,14 @@
   }
 }
 
+.section-about-description-container {
+  @include respond(phone) {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+}
+
 .composition {
   position: relative;
 

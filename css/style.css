@@ -233,10 +233,7 @@ body {
       font-size: 4rem; } }
   @media (max-width: 26.5625em) {
     .heading-secondary {
-      font-size: 2rem; } }
-  @media (max-width: 20em) {
-    .heading-secondary {
-      font-size: 2rem; } }
+      font-size: 2.5rem; } }
 
 .paragraph {
   padding-top: 10rem;
@@ -244,9 +241,10 @@ body {
   @media (max-width: 64em) {
     .paragraph {
       padding-top: 2rem; } }
-  @media (max-width: 20em) {
+  @media (max-width: 26.5625em) {
     .paragraph {
-      font-size: 2rem; } }
+      font-size: 2rem;
+      padding: 0px 10px; } }
 
 .u-center-text {
   text-align: center; }
@@ -390,6 +388,12 @@ body {
     @media (max-width: 90em) {
       .section-footer li {
         margin-top: 0; } }
+
+@media (max-width: 26.5625em) {
+  .section-about-description-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column; } }
 
 .composition {
   position: relative; }
