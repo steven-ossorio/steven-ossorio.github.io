@@ -242,6 +242,10 @@
 
         img {
           height: 5.5rem;
+
+          @include respond(phone) {
+            height: 4rem;
+          }
         }
 
         i {
