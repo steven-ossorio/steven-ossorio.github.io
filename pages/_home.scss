@@ -114,6 +114,11 @@
       left: 0;
       top: 4rem;
 
+      @include respond(tabletOne) {
+        left: 12rem;
+        top: 10rem;
+      }
+
       @include respond(phone) {
         width: 50%;
         left: 2rem;
@@ -129,6 +134,16 @@
       left: 12rem;
       top: 10rem;
 
+      @include respond(tabletOne) {
+        left: 12rem;
+        top: 10rem;
+      }
+
+      @include respond(phone) {
+        left: 12rem;
+        top: 15rem;
+      }
+
       @include respond(small-phone) {
         left: 10rem;
         top: 10rem;
@@ -136,7 +151,15 @@
     }
 
     &--p3 {
-      top: 25rem;
+      @include respond(tabletOne) {
+        left: 12rem;
+        top: 10rem;
+      }
+
+      @include respond(phone) {
+        left: 11rem;
+        top: 26rem;
+      }
 
       @include respond(small-phone) {
         left: 8rem;

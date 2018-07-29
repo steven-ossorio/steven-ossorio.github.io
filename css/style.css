@@ -412,6 +412,10 @@ body {
     .composition-photo--p1 {
       left: 0;
       top: 4rem; }
+      @media (max-width: 34.375em) {
+        .composition-photo--p1 {
+          left: 12rem;
+          top: 10rem; } }
       @media (max-width: 26.5625em) {
         .composition-photo--p1 {
           width: 50%;
@@ -423,16 +427,30 @@ body {
     .composition-photo--p2 {
       left: 12rem;
       top: 10rem; }
+      @media (max-width: 34.375em) {
+        .composition-photo--p2 {
+          left: 12rem;
+          top: 10rem; } }
+      @media (max-width: 26.5625em) {
+        .composition-photo--p2 {
+          left: 12rem;
+          top: 15rem; } }
       @media (max-width: 20em) {
         .composition-photo--p2 {
           left: 10rem;
           top: 10rem; } }
-    .composition-photo--p3 {
-      top: 25rem; }
-      @media (max-width: 20em) {
-        .composition-photo--p3 {
-          left: 8rem;
-          top: 20rem; } }
+    @media (max-width: 34.375em) {
+      .composition-photo--p3 {
+        left: 12rem;
+        top: 10rem; } }
+    @media (max-width: 26.5625em) {
+      .composition-photo--p3 {
+        left: 11rem;
+        top: 26rem; } }
+    @media (max-width: 20em) {
+      .composition-photo--p3 {
+        left: 8rem;
+        top: 20rem; } }
     .composition-photo:hover {
       transform: scale(1.05) translateY(6px);
       box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
