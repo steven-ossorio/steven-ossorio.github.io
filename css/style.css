@@ -372,14 +372,18 @@ body {
       margin-top: -10vh; } }
 
 .section-resume {
-  height: 50vh;
+  height: 50rem;
   background-image: linear-gradient(to right, rgba(137, 247, 254, 0.7), rgba(102, 166, 255, 0.7));
   background-size: cover;
   position: relative;
+  width: 100%;
   margin-top: 60vh; }
   @media (max-width: 48em) {
     .section-resume {
-      margin-top: 320vh; } }
+      margin-top: 270rem; } }
+  @media (max-width: 26.5625em) {
+    .section-resume {
+      margin-top: 260rem; } }
   .section-resume h1 {
     font-size: 7rem;
     text-align: center; }

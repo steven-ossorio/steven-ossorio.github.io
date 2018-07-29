@@ -29,7 +29,7 @@
 }
 
 .section-resume {
-  height: 50vh;
+  height: 50rem;
   background-image: linear-gradient(
     to right,
     rgba(#89f7fe, 0.7),
@@ -37,10 +37,15 @@
   );
   background-size: cover;
   position: relative;
+  width: 100%;
   margin-top: 60vh;
 
   @include respond(tabletTwo) {
-    margin-top: 320vh;
+    margin-top: 270rem;
+  }
+
+  @include respond(phone) {
+    margin-top: 260rem;
   }
 
   h1 {
