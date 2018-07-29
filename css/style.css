@@ -372,14 +372,22 @@ body {
       margin-top: -10vh; } }
 
 .section-resume {
-  margin-top: 250px; }
+  height: 50vh;
+  background-image: linear-gradient(to right, rgba(137, 247, 254, 0.7), rgba(102, 166, 255, 0.7));
+  background-size: cover;
+  position: relative;
+  margin-top: 60vh; }
+  .section-resume h1 {
+    font-size: 7rem;
+    text-align: center; }
   .section-resume .envelope {
     position: relative;
     margin: 50px auto 0;
     width: 250px;
     height: 225px;
     border-radius: 0 0 5px 5px;
-    box-shadow: 0 0 15px #c94548 inset; }
+    box-shadow: 0 0 15px #c94548 inset;
+    cursor: default; }
   .section-resume .envelope:before,
   .section-resume .envelope:after {
     content: "";
@@ -387,10 +395,12 @@ body {
     width: 0;
     height: 0;
     border: 0 solid transparent;
-    border-width: 112px 125px; }
+    border-width: 112px 125px;
+    cursor: pointer; }
   .section-resume .envelope:before {
     top: -100%;
-    left: 0px; }
+    left: 0px;
+    cursor: default; }
   .section-resume .envelope:after {
     border-right-color: #ed4c50;
     border-left-color: #fa565a;
@@ -398,7 +408,8 @@ body {
     top: 0;
     border-radius: 0 0 5px 5px;
     transform: rotate(360deg);
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25); }
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+    cursor: pointer; }
 
 .section-projects {
   background-color: #f7f7f7;
@@ -552,13 +563,5 @@ body {
           .skill-container .skill-list .icon-container p {
             font-size: 1rem; } }
 
-.btn {
-  text-transform: uppercase;
-  text-decoration: none;
-  padding: 1rem 3rem;
-  display: inline-block;
-  border-radius: 10rem;
-  transition: all 0.2s;
-  position: relative;
-  font-size: 1.6rem;
-  background-color: white; }
+.btn:hover {
+  cursor: default; }
